@@ -42,6 +42,26 @@ namespace OpenTK.Windowing.GraphicsLibraryFramework
         /// <summary>
         /// The vertical resize shape. Used when mousing over something that can be vertically resized.
         /// </summary>
-        VResize = 0x00036006
+        VResize = 0x00036006,
+
+        /// <summary>
+        /// The top-left to bottom-right diagonal resize shape. Used when mousing over something that can be diagonally resized.
+        /// </summary>
+        NWSEResize = 0x00036007,
+
+        /// <summary>
+        /// The top-right to bottom-left diagonal resize shape. Used when mousing over something that can be diagonally resized.
+        /// </summary>
+        NESWResize = 0x00036008,
+
+        /// <summary>
+        /// The omni-directional move shape. Used when mousing over something that can be moved.
+        /// </summary>
+        AllCursor = 0x00036009,
+
+        /// <summary>
+        /// The operation-not-allowed shape. Used when mousing over something that is not interactable.
+        /// </summary>
+        NotAllowed = 0x0003600A
     }
 }
