@@ -18,7 +18,6 @@
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
       <PackageReference Condition="'$(TargetFramework)' == 'net472'" Include="System.Memory" Version="4.5" />
-      <PackageReference Include="opentoolkit.redist.glfw" Version="3.3.0-pre20190419183326" />
     </ItemGroup>
 
     <ItemGroup>
@@ -44,6 +43,11 @@
       </ItemGroup>
       <Message Text="Removing System.Memory for mono compatibility" Importance="high" />
     </Target>
+    <ItemGroup>
+      <None Update="glfw3.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
     <ItemGroup>
       <PackageReference Update="StyleCop.Analyzers" Version="1.1.118" />
     </ItemGroup>
