@@ -57,7 +57,7 @@ namespace OpenTK.Windowing.GraphicsLibraryFramework
         /// <summary>
         /// The omni-directional move shape. Used when mousing over something that can be moved.
         /// </summary>
-        AllCursor = 0x00036009,
+        AllResize = 0x00036009,
 
         /// <summary>
         /// The operation-not-allowed shape. Used when mousing over something that is not interactable.
